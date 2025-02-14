@@ -1,12 +1,15 @@
 import React from "react";
 import "./card-list.styles.css";
 
+import { Card } from "../card/card.component";
+
 export const CardList = ({ monsters }) => {
   return (
     <>
+      <p className="card-list-title">List of Users</p>
       <ul className="card-list">
         {monsters.map((monster) => (
-          <li key={monster.id}>{monster.name}</li>
+          <Card key={monster.id} monster={monster} />
         ))}
       </ul>
     </>

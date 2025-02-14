@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 import React, { Component } from "react";
 
@@ -47,13 +47,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>My list of Users</p>
-          <CardList monsters={this.state.monsters} />
-        </header>
-      </div>
+      <>
+        <CardList monsters={this.state.monsters} />
+      </>
     );
   }
 }
