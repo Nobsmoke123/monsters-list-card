@@ -2,6 +2,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import React, { Component } from "react";
 
+import { CardList } from "./components/card-list/card-list.compoent";
+
 // function App() {
 //   return (
 //     <div className="App">
@@ -34,9 +36,6 @@ class App extends Component {
   }
 
   componentDidMount() {
-    console.log(
-      "Called again because of rerendering triggered because you called setState."
-    );
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => response.json())
       .then((value) => {
@@ -51,25 +50,8 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>{this.state.string}</p>
-          <button onClick={() => this.setState({ string: "Hello Donald!" })}>
-            Change Text
-          </button>
           <p>My list of Users</p>
-          <ul>
-            {this.state.monsters.map((monster) => (
-              <li key={monster.id}>{monster.name}</li>
-            ))}
-          </ul>
-
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Lear React
-          </a>
+          <CardList monsters={this.state.monsters} />
         </header>
       </div>
     );
