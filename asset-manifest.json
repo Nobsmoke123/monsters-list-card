@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/git@github.com:Nobsmoke123/monsters-list-card/static/css/main.8b214243.css",
+    "main.js": "/git@github.com:Nobsmoke123/monsters-list-card/static/js/main.75dc4e46.js",
+    "index.html": "/git@github.com:Nobsmoke123/monsters-list-card/index.html",
+    "main.8b214243.css.map": "/git@github.com:Nobsmoke123/monsters-list-card/static/css/main.8b214243.css.map",
+    "main.75dc4e46.js.map": "/git@github.com:Nobsmoke123/monsters-list-card/static/js/main.75dc4e46.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b214243.css",
+    "static/js/main.75dc4e46.js"
+  ]
+}
