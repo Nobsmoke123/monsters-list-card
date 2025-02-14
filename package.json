@@ -2,7 +2,7 @@
   "name": "starter-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "git@github.com:Nobsmoke123/monsters-list-card",
+  "homepage": "https://nobsmoke123.github.io/monsters-list-card",
   "dependencies": {
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
